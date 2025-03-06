@@ -253,14 +253,30 @@ body {
   width: 100%;
 }
 
+/* Profile image with animated gradient border */
 .profile-image-container {
   width: 12rem;
   height: 12rem;
   border-radius: 50%;
   overflow: hidden;
   margin: 0 auto 1.5rem;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
-  border: 3px solid white;
+  border: 3px solid transparent;
+  background: 
+    linear-gradient(white, white) padding-box,
+    linear-gradient(45deg, #6366f1, #8b5cf6, #c084fc, #6366f1) border-box;
+  background-size: 300% 300%;
+  animation: borderGradient 8s linear infinite;
+  position: relative;
+  box-shadow: 0 10px 25px rgba(139, 92, 246, 0.2);
+}
+
+@keyframes borderGradient {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 300% 300%;
+  }
 }
 
 .profile-image {
@@ -273,6 +289,20 @@ body {
 
 .profile-image-container:hover .profile-image {
   transform: scale(1.05);
+}
+
+/* Add floating effect to profile image */
+.profile-image-container {
+  animation: floatEffect 6s ease-in-out infinite;
+}
+
+@keyframes floatEffect {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
 }
 
 .about-buttons {
@@ -308,10 +338,27 @@ body {
   }
 }
 
-.resume-button {
+/* Buttons that match your current site */
+.resume-button, .contact-button {
+  background-color: #6366f1;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  text-align: center;
+  border: none;
+  cursor: pointer;
+  font-weight: 500;
+  width: auto;
+  font-size: 0.95rem;
+  box-shadow: 0 4px 6px rgba(99, 102, 241, 0.25);
   position: relative;
   overflow: hidden;
   z-index: 1;
+}
+
+.resume-button {
+  background-color: #6366f1;
 }
 
 .resume-button::before {
@@ -328,8 +375,8 @@ body {
 
 .resume-button:hover {
   background-color: #4f46e5;
-  box-shadow: 0 4px 12px rgba(99, 102, 241, 0.3);
-  transform: translateY(-2px);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 15px rgba(99, 102, 241, 0.3);
 }
 
 .resume-button:hover::before {
@@ -338,31 +385,32 @@ body {
 
 .contact-button {
   background-color: #8b5cf6;
-  position: relative;
-  overflow: hidden;
-}
-
-.contact-button::after {
-  content: '';
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  background: linear-gradient(45deg, transparent 50%, rgba(255, 255, 255, 0.15) 50%);
-  background-size: 200% 200%;
-  background-position: 0% 0%;
-  transition: background-position 0.5s ease;
 }
 
 .contact-button:hover {
   background-color: #7c3aed;
-  box-shadow: 0 4px 12px rgba(139, 92, 246, 0.3);
-  transform: translateY(-2px);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 15px rgba(139, 92, 246, 0.3);
 }
 
-.contact-button:hover::after {
-  background-position: 100% 100%;
+/* Download Resume button animation */
+.download-resume {
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+  animation: buttonPulse 2s infinite;
+}
+
+@keyframes buttonPulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(99, 102, 241, 0.7);
+  }
+  70% {
+    box-shadow: 0 0 0 10px rgba(99, 102, 241, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(99, 102, 241, 0);
+  }
 }
 
 /* Why Work With Me - Modern Cards */
@@ -382,45 +430,63 @@ body {
   }
 }
 
+/* Why Work With Me - Cards design to match current site */
+.why-work-with-me {
+  margin-top: 3.5rem;
+}
+
+.why-work-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .why-work-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
 .why-work-card {
-  background-color: #faf5ff;
+  background-color: #f5f3ff;
   padding: 1.75rem;
   border-radius: 0.75rem;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  border: 1px solid rgba(0, 0, 0, 0.03);
+  border: 1px solid rgba(139, 92, 246, 0.1);
   position: relative;
   overflow: hidden;
 }
 
 .why-work-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 15px 30px rgba(139, 92, 246, 0.1);
+  animation: cardPulse 2s infinite ease-in-out;
 }
 
-.why-work-card::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 4px;
-  height: 100%;
-  background: #7e22ce;
+@keyframes cardPulse {
+  0% {
+    box-shadow: 0 15px 30px rgba(139, 92, 246, 0.1);
+  }
+  50% {
+    box-shadow: 0 15px 30px rgba(139, 92, 246, 0.2);
+  }
+  100% {
+    box-shadow: 0 15px 30px rgba(139, 92, 246, 0.1);
+  }
+}
+
+.why-work-card.brand-strategy {
+  border-left: 4px solid #8b5cf6;
 }
 
 .why-work-card.program-management {
   background-color: #eef2ff;
-}
-
-.why-work-card.program-management::before {
-  background: #4f46e5;
+  border-left: 4px solid #6366f1;
 }
 
 .why-work-card.cross-functional {
   background-color: #eff6ff;
-}
-
-.why-work-card.cross-functional::before {
-  background: #3b82f6;
+  border-left: 4px solid #3b82f6;
 }
 
 .why-work-title {
@@ -428,14 +494,39 @@ body {
   font-weight: 600;
   margin-bottom: 0.75rem;
   color: #7e22ce;
+  position: relative;
+  display: inline-block;
+}
+
+.why-work-title::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #8b5cf6;
+  transition: width 0.3s ease;
+}
+
+.why-work-card:hover .why-work-title::after {
+  width: 100%;
 }
 
 .why-work-card.program-management .why-work-title {
   color: #4f46e5;
 }
 
+.why-work-card.program-management .why-work-title::after {
+  background-color: #4f46e5;
+}
+
 .why-work-card.cross-functional .why-work-title {
   color: #3b82f6;
+}
+
+.why-work-card.cross-functional .why-work-title::after {
+  background-color: #3b82f6;
 }
 
 .why-work-text {

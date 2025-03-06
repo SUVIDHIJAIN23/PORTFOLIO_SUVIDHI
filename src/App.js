@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './App.css'; // Import App.css for styling
-
+import Articles from './Articles'; // Import the new Articles component
 
 const App = () => {
   const [activeSection, setActiveSection] = useState('about');
@@ -10,6 +10,7 @@ const App = () => {
     { id: 'about', label: 'About' },
     { id: 'experience', label: 'Experience' },
     { id: 'education', label: 'Education' },
+    { id: 'articles', label: 'Articles' },
     { id: 'skills', label: 'Skills' },
     { id: 'achievements', label: 'Achievements' },
     { id: 'contact', label: 'Contact' }
@@ -133,13 +134,13 @@ const App = () => {
   ];
 
   return (
-    <div className="app-container"> {/* Renamed class for CSS */}
+    <div className="app-container">
       {/* Header */}
-      <header className="header"> {/* Renamed class for CSS */}
-        <div className="header-content container"> {/* Renamed classes for CSS */}
-          <h1 className="header-title">{personalInfo.name}</h1> {/* Renamed class for CSS */}
-          <p className="header-subtitle">Brand Strategist & Program Manager</p> {/* Renamed class for CSS */}
-          <div className="nav-links"> {/* Renamed class for CSS */}
+      <header className="header">
+        <div className="header-content container">
+          <h1 className="header-title">{personalInfo.name}</h1>
+          <p className="header-subtitle">Brand Strategist & Program Manager</p>
+          <div className="nav-links">
             {navLinks.map((link) => (
               <button
                 key={link.id}
@@ -184,10 +185,10 @@ const App = () => {
                 </div>
                 <div className="about-image-area"> {/* Renamed class for CSS */}
                   <div className="profile-image-container"> {/* Renamed class for CSS */}
-                    <img src="/profile.jpg" alt="Suvidhi Jain" className="profile-image" /> {/* Renamed classes for CSS */}
+                  <img src={process.env.PUBLIC_URL + '/profile.jpeg'} alt="Suvidhi Jain" className="profile-image" />
                   </div>
                   <div className="about-buttons"> {/* Renamed class for CSS */}
-                    <a
+                    <a  
                       href="/Suvidhi_Jain_Resume.pdf"
                       download="Suvidhi_Jain_Resume.pdf"
                       className="resume-button" 
@@ -313,6 +314,10 @@ const App = () => {
             </div>
           </section>
         )}
+         {/* Articles Section - NEW */}
+         {activeSection === 'articles' && (
+          <Articles />
+        )}
 
         {/* Achievements Section */}
         {activeSection === 'achievements' && (
@@ -344,7 +349,7 @@ const App = () => {
                       <div className="contact-detail-icon">✉️</div> {/* Renamed class for CSS */}
                       <div className="contact-detail-text"> {/* Renamed class for CSS */}
                         <p className="detail-label">Email</p> {/* Renamed class for CSS */}
-                        <a href={`mailto:${personalInfo.email}`} className="contact-link">{personalInfo.email}</a> {/* Renamed classes for CSS */}
+                        <a href={`mailto:suvidhijain23@gmail.com`} className="contact-link">{personalInfo.email}</a> {/* Renamed classes for CSS */}
                       </div>
                     </div>
                     <div className="contact-detail-item"> {/* Renamed class for CSS */}
@@ -375,7 +380,7 @@ const App = () => {
                   <h3 className="section-subtitle">Send Me a Message</h3> {/* Renamed class for CSS */}
                   <form
                     className="contact-form" 
-                    action="mailto:me.jainnikhil@gmail.com" // Remember to change this to your email
+                    action="mailto:suvidhijain23@gmail.com" // Remember to change this to your email
                     method="post"
                     encType="text/plain"
                   >
@@ -438,23 +443,23 @@ const App = () => {
       </main>
 
       {/* Footer */}
-      <footer className="footer"> {/* Renamed class for CSS */}
-        <div className="footer-content container"> {/* Renamed classes for CSS */}
-          <div className="footer-info"> {/* Renamed class for CSS */}
-            <h3 className="footer-name">{personalInfo.name}</h3> {/* Renamed class for CSS */}
-            <p className="footer-title">Brand Strategist & Program Manager</p> {/* Renamed class for CSS */}
+      <footer className="footer">
+        <div className="footer-content container">
+          <div className="footer-info">
+            <h3 className="footer-name">{personalInfo.name}</h3>
+            <p className="footer-title">Brand Strategist & Program Manager</p>
           </div>
-          <div className="footer-social"> {/* Renamed class for CSS */}
-            <a href={personalInfo.linkedin} target="_blank" rel="noopener noreferrer" className="social-link"> {/* Renamed class for CSS */}
+          <div className="footer-social">
+            <a href={personalInfo.linkedin} target="_blank" rel="noopener noreferrer" className="social-link">
               🔗
             </a>
-            <a href={`mailto:${personalInfo.email}`} className="social-link"> {/* Renamed class for CSS */}
+            <a href={`mailto:${personalInfo.email}`} className="social-link">
               ✉️
             </a>
           </div>
         </div>
-        <div className="footer-copyright"> {/* Renamed class for CSS */}
-          <p>© {new Date().getFullYear()} {personalInfo.name}. All rights reserved.</p> {/* Renamed class for CSS */}
+        <div className="footer-copyright">
+          <p>© {new Date().getFullYear()} {personalInfo.name}. All rights reserved.</p>
         </div>
       </footer>
     </div>
