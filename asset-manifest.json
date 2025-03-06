@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/PORTFOLIO_SUVIDHI/static/css/main.ccba0e38.css",
+    "main.js": "/PORTFOLIO_SUVIDHI/static/js/main.db6c148b.js",
+    "static/js/453.978c7d90.chunk.js": "/PORTFOLIO_SUVIDHI/static/js/453.978c7d90.chunk.js",
+    "index.html": "/PORTFOLIO_SUVIDHI/index.html",
+    "main.ccba0e38.css.map": "/PORTFOLIO_SUVIDHI/static/css/main.ccba0e38.css.map",
+    "main.db6c148b.js.map": "/PORTFOLIO_SUVIDHI/static/js/main.db6c148b.js.map",
+    "453.978c7d90.chunk.js.map": "/PORTFOLIO_SUVIDHI/static/js/453.978c7d90.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ccba0e38.css",
+    "static/js/main.db6c148b.js"
+  ]
+}
