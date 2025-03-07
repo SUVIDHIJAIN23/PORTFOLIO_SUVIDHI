@@ -188,13 +188,9 @@ const App = () => {
                   <img src={process.env.PUBLIC_URL + '/profile.jpeg'} alt="Suvidhi Jain" className="profile-image" />
                   </div>
                   <div className="about-buttons"> {/* Renamed class for CSS */}
-                    <a  
-                      href="/Suvidhi_Jain_Resume.pdf"
-                      download="Suvidhi_Jain_Resume.pdf"
-                      className="resume-button" 
-                    >
-                      Download Resume
-                    </a>
+                  <a href={process.env.PUBLIC_URL + '/Suvidhi_Jain_Resume.pdf'}>
+                      Simple Resume Link Test
+                  </a>
                     <button
                       onClick={() => setActiveSection('contact')}
                       className="contact-button"
