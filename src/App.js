@@ -188,7 +188,10 @@ const App = () => {
                   <img src={process.env.PUBLIC_URL + '/profile.jpeg'} alt="Suvidhi Jain" className="profile-image" />
                   </div>
                   <div className="about-buttons"> {/* Renamed class for CSS */}
-                  <a href={process.env.PUBLIC_URL + '/Suvidhi_Jain_Resume.pdf'}>
+                  <a href={process.env.PUBLIC_URL + '/Suvidhi_Jain_Resume.pdf'}
+                    download="Suvidhi_Jain_Resume.pdf"
+                    className="resume-button"
+                    >
                       Download Resume
                   </a>
                     <button
