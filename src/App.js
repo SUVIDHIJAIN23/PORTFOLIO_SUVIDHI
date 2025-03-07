@@ -189,7 +189,7 @@ const App = () => {
                   </div>
                   <div className="about-buttons"> {/* Renamed class for CSS */}
                   <a href={process.env.PUBLIC_URL + '/Suvidhi_Jain_Resume.pdf'}>
-                      Simple Resume Link Test
+                      Download Resume
                   </a>
                     <button
                       onClick={() => setActiveSection('contact')}
