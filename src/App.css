@@ -1,9 +1,7 @@
-/* App.css - Modern Professional Portfolio Styling */
 
-/* Basic Reset and Font Imports */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
-/* Basic Reset and Body Styles */
+
 * {
   margin: 0;
   padding: 0;
@@ -27,7 +25,7 @@ body {
   padding-right: 1.5rem;
 }
 
-/* Header Styles - Modern Gradient Design */
+
 .header {
   background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 50%, #d946ef 100%);
   color: white;
@@ -45,9 +43,7 @@ body {
   height: 100%;
   background: 
     radial-gradient(circle at 30% 50%, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0) 60%),
-    url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11 18c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm48 25c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm-43-7c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm63 31c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM34 90c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm56-76c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM12 86c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm28-65c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm23-11c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-6 60c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm29 22c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zM32 63c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm57-13c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-9-21c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM60 91c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM35 41c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM12 60c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2z' fill='white' fill-opacity='0.03' fill-rule='evenodd'/%3E%3C/svg%3E");
   
-  animation: subtleFloat 10s infinite alternate ease-in-out;
 }
 
 @keyframes subtleFloat {
@@ -118,13 +114,13 @@ body {
   box-shadow: 0 4px 12px rgba(99, 102, 241, 0.2);
 }
 
-/* Main Content Container with Modern Spacing */
+
 .main-content {
   padding-top: 3rem;
   padding-bottom: 3rem;
 }
 
-/* Section Cards with Subtle Shadows and Borders */
+
 .section {
   margin-bottom: 3rem;
 }
@@ -253,7 +249,6 @@ body {
   width: 100%;
 }
 
-/* Profile image with animated gradient border */
 .profile-image-container {
   width: 12rem;
   height: 12rem;
@@ -291,7 +286,7 @@ body {
   transform: scale(1.05);
 }
 
-/* Add floating effect to profile image */
+
 .profile-image-container {
   animation: floatEffect 6s ease-in-out infinite;
 }
@@ -338,7 +333,7 @@ body {
   }
 }
 
-/* Buttons that match your current site */
+
 .resume-button, .contact-button {
   background-color: #6366f1;
   color: white;
@@ -393,7 +388,7 @@ body {
   box-shadow: 0 8px 15px rgba(139, 92, 246, 0.3);
 }
 
-/* Download Resume button animation */
+
 .download-resume {
   display: inline-block;
   position: relative;
@@ -413,7 +408,7 @@ body {
   }
 }
 
-/* Why Work With Me - Modern Cards */
+
 .why-work-with-me {
   margin-top: 3.5rem;
 }
@@ -430,7 +425,7 @@ body {
   }
 }
 
-/* Why Work With Me - Cards design to match current site */
+
 .why-work-with-me {
   margin-top: 3.5rem;
 }
@@ -723,7 +718,7 @@ body {
   font-weight: 500;
 }
 
-/* Skills Section - Modern Interactive Design */
+
 .skills-grid {
   display: grid;
   grid-template-columns: 1fr;
@@ -849,7 +844,7 @@ body {
   line-height: 1.6;
 }
 
-/* Contact Section - Modern Layout */
+
 .contact-section-content.grid {
   display: grid;
   grid-template-columns: 1fr;
@@ -1011,7 +1006,7 @@ body {
   height: 300px;
 }
 
-/* Footer - Modern Design */
+
 .footer {
   background: linear-gradient(135deg, #1e293b, #0f172a);
   color: white;
@@ -1407,7 +1402,7 @@ body {
 }
 
 
-/* Case Study Detail Styles */
+
 .back-to-portfolio-button {
   display: flex;
   align-items: center;
@@ -1591,7 +1586,7 @@ body {
   transform: scale(1.05);
 }
 
-* Additional CSS styles to ensure proper integration */
+/* Additional CSS styles to ensure proper integration */
 
 /* Portfolio Section - Extra styles for consistent appearance */
 .portfolio-section-intro {
@@ -2611,10 +2606,7 @@ body {
   position: absolute;
   width: 100%;
   height: 100%;
-  background-image: 
-    url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23ffffff' fill-opacity='0.05' fill-rule='evenodd'%3E%3Cpath d='M0 38.59l2.83-2.83 1.41 1.41L1.41 40H0v-1.41zM0 1.4l2.83 2.83 1.41-1.41L1.41 0H0v1.41zM38.59 40l-2.83-2.83 1.41-1.41L40 38.59V40h-1.41zM40 1.41l-2.83 2.83-1.41-1.41L38.59 0H40v1.41zM20 18.6l2.83-2.83 1.41 1.41L21.41 20l2.83 2.83-1.41 1.41L20 21.41l-2.83 2.83-1.41-1.41L18.59 20l-2.83-2.83 1.41-1.41L20 18.59z'/%3E%3C/g%3E%3C/svg%3E");
-  opacity: 0.6;
-  animation: patternShift 20s linear infinite;
+  
 }
 
 /* The letter/character that shows up as a fallback */
@@ -2800,128 +2792,13 @@ body {
   max-width: 800px;
 }
 
-/* Enhanced dynamic experience-hero-backdrop with layered animations and modern effects */
-
 .experience-hero-backdrop {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  overflow: hidden;
-  z-index: 1;
-}
-
-/* Primary radial gradient with animation */
-.experience-hero-backdrop::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: 
-    radial-gradient(circle at 20% 30%, rgba(255, 255, 255, 0.15) 0%, transparent 50%),
-    radial-gradient(circle at 80% 70%, rgba(255, 255, 255, 0.1) 0%, transparent 40%);
-  opacity: 0;
-  animation: pulseGlow 8s ease-in-out infinite;
-}
-
-/* Animated pattern overlay */
-.experience-hero-backdrop::after {
-  content: '';
-  position: absolute;
-  top: -50%;
-  left: -50%;
-  width: 200%;
-  height: 200%;
-  background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
-  opacity: 0.4;
-  transform-origin: center;
-  animation: rotatePattern 120s linear infinite;
-}
-
-/* Additional floating particles */
-.experience-hero-particles {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-  z-index: 2;
-}
-
-.experience-hero-particles::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-image: 
-    radial-gradient(circle at 85% 7%, rgba(255, 255, 255, 0.12) 0%, rgba(255, 255, 255, 0) 50%),
-    radial-gradient(circle at 15% 72%, rgba(255, 255, 255, 0.08) 0%, rgba(255, 255, 255, 0) 45%),
-    radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0) 60%);
-  animation: shiftGlow 15s ease-in-out infinite alternate;
-}
-
-/* Subtle moving lines */
-.experience-hero-lines {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-  z-index: 1;
-  opacity: 0.15;
-  background-image: 
-    linear-gradient(90deg, transparent 0%, transparent 49%, rgba(255, 255, 255, 0.1) 50%, transparent 51%, transparent 100%),
-    linear-gradient(0deg, transparent 0%, transparent 49%, rgba(255, 255, 255, 0.1) 50%, transparent 51%, transparent 100%);
-  background-size: 60px 60px;
-  animation: movingLines 8s linear infinite;
-}
-
-/* Animation keyframes */
-@keyframes pulseGlow {
-  0%, 100% {
-    opacity: 0.3;
-    transform: scale(1);
-  }
-  50% {
-    opacity: 0.7;
-    transform: scale(1.05);
-  }
-}
-
-@keyframes rotatePattern {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-
-@keyframes shiftGlow {
-  0% {
-    background-position: 0% 0%;
-    opacity: 0.5;
-  }
-  100% {
-    background-position: 100% 100%;
-    opacity: 0.8;
-  }
-}
-
-@keyframes movingLines {
-  0% {
-    background-position: 0 0;
-  }
-  100% {
-    background-position: 60px 60px;
-  }
+  background-image: radial-gradient(circle at 20% 50%, rgba(255, 255, 255, 0.1) 0%, transparent 40%);
 }
 
 .experience-period-badge {
@@ -3232,7 +3109,7 @@ body {
   background-color: #e5e7eb;
 }
 
-/* Responsive styles */
+
 @media (max-width: 768px) {
   .experience-grid {
     grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
@@ -3251,16 +3128,14 @@ body {
     min-width: 100%;
   }
 }
-/* Additional styles to ensure content visibility */
 
-/* Make sure sections are visible by default */
 .experience-section-block {
   opacity: 1 !important;
   transform: none !important;
   transition: all 0.3s ease;
 }
 
-/* Ensure list items are visible */
+
 .experience-responsibility-item,
 .experience-achievement-item {
   opacity: 1 !important;
@@ -3271,7 +3146,7 @@ body {
   position: relative;
 }
 
-/* Make sure the bullet points are visible */
+
 .experience-responsibility-item::before,
 .experience-achievement-item::before {
   content: '•';
@@ -3286,19 +3161,19 @@ body {
   content: '✓';
 }
 
-/* Ensure skill tags are visible */
+
 .skill-tag {
   opacity: 1 !important;
   transform: none !important;
 }
 
-/* Add some vertical spacing between sections */
+
 .experience-section-block {
   margin-bottom: 35px;
   padding: 25px;
 }
 
-/* Make section headings more prominent */
+
 .experience-section-title {
   font-size: 24px;
   margin-bottom: 20px;
