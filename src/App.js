@@ -414,7 +414,7 @@ const App = () => {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<HomePage />} />
+        <Route path="/PORTFOLIO_SUVIDHI" element={<HomePage />} />
         <Route path="/experience/:experienceId" element={
           <div className="app-container">
             <header className="header">
