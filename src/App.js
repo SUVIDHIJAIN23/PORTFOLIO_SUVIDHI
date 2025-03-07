@@ -189,7 +189,7 @@ const App = () => {
                   </div>
                   <div className="about-buttons"> {/* Renamed class for CSS */}
                     <a  
-                      href="/Suvidhi_Jain_Resume.pdf"
+                      href=rocess.env.PUBLIC_URL + "/Suvidhi_Jain_Resume.pdf"
                       download="Suvidhi_Jain_Resume.pdf"
                       className="resume-button" 
                     >
